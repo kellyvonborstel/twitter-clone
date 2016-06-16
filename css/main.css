@@ -80,8 +80,8 @@ body {
   z-index: 100;
   width: 90%;
   max-width: 650px;
-  margin: 170px auto 20px;
   padding: 50px;
+  margin: 170px auto 20px;
   background-color: #fff;
   border: 2px solid #0d5f77;
   border-radius: 25px;
@@ -104,16 +104,16 @@ h1 span {
   letter-spacing: -.08em;
 }
 li {
-  margin-bottom: 20px;
   border-bottom: 1px dashed #198cae;
   padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 li:first-child {
   margin-top: 40px;
 }
 li:last-child {
-  margin-bottom: -10px;
   padding-bottom: 0;
+  margin-bottom: -10px;
   border-bottom: 0;
 }
 h3 {
@@ -205,6 +205,9 @@ Smaller Screen Styles
   h1 {
     margin-top: -105px;
     font-size: 60px;
+  }
+  .message-input, .back-to-all, .view-new-tweets {
+    font-size: 1.3em;
   }
   .message {
     width: 100%;

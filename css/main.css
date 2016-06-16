@@ -1,0 +1,219 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/*
+=====================================
+Custom Styles
+=====================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font: 400 .9em/1.5 "Nobile", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #104c5f;
+  background: #bae5f6;
+  background-image: url('../img/background.png');
+}
+.cloud-container {
+  position: absolute;
+  width: 100%;
+}
+.cloud{
+  position: absolute;
+  z-index: 50;
+}
+.container {
+  position: relative;
+  z-index: 100;
+  width: 90%;
+  max-width: 650px;
+  padding: 50px;
+  margin: 170px auto 20px;
+  background-color: #fff;
+  border: 2px solid #0d5f77;
+  border-radius: 25px;
+}
+.bird {
+  position: absolute;
+  top: -140px;
+  right: 65px;
+}
+h1 {
+  margin-top: -120px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 65px;
+  letter-spacing: -.01em;
+  color: #0d5f77;
+}
+h1 span {
+  font-size: 1.03em;
+  letter-spacing: -.08em;
+}
+li {
+  border-bottom: 1px dashed #198cae;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+li:first-child {
+  margin-top: 40px;
+}
+li:last-child {
+  padding-bottom: 0;
+  margin-bottom: -10px;
+  border-bottom: 0;
+}
+h3 {
+  margin-top: 25px;
+  font-size: .9em;
+  color: #7dbacd;
+}
+h3:hover {
+  color: #198cae;
+  cursor: pointer;
+}
+.full-name {
+  padding-bottom: 5px;
+  font: 1.1em;
+  font-weight: 700;
+  color: #198cae;
+}
+.full-name:hover {
+  color: #016886;
+  cursor: pointer;
+}
+.message {
+  width: 70%;
+}
+.timeago {
+  float: right;
+  padding-left: 30px;
+  color: #fca46f;
+}
+.message-input,
+.back-to-all,
+.view-new-tweets {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-family: "Nobile";
+  font-size: 1.5em;
+  outline: none;
+}
+.message-input {
+  color: #777;
+  background: #efefef;
+  border: 2px solid #ccc;
+}
+.message-input:hover {
+  background: #fff;
+}
+.back-to-all,
+.view-new-tweets {
+  color: #fff;
+  border: none;
+}
+.back-to-all {
+  background: #7dbacd;
+}
+.back-to-all:hover {
+  background: #5ba6bd;
+  cursor: pointer;
+}
+.view-new-tweets {
+  background: #e66c23;
+}
+.view-new-tweets:hover {
+  background: #da5200;
+  cursor: pointer;
+}
+.credit {
+  margin: -5px auto 30px;
+  text-align: center;
+  font-size: .7em;
+  color: #62a7bc;
+}
+
+
+/*
+=====================================
+Smaller Screen Styles
+=====================================
+*/
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 40px 35px;
+  }
+  .bird {
+    top: -165px;
+    right: 5px;
+  }
+  h1 {
+    margin-top: -105px;
+    font-size: 60px;
+  }
+  .message-input, .back-to-all, .view-new-tweets {
+    font-size: 1.3em;
+  }
+  .message {
+    width: 100%;
+  }
+  .timeago {
+    float: none;
+    padding-left: 0;
+  }
+}

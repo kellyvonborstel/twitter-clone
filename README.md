@@ -1,6 +1,6 @@
 Twitter Clone
 ==============
 
-Twitter clone built with HTML, CSS, and JavaScript. **Please view project by clicking link below.**
+Twitter clone UI built with HTML, CSS, and JavaScript.
 
 ##[http://kellyvonborstel.github.io/twitter-clone/](http://kellyvonborstel.github.io/twitter-clone/)
